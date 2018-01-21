@@ -74,6 +74,9 @@ public class Login extends Application {
         //column 1, row 4
         grid.add(hbBtn,1,4);
         
+    final Text actiontarget = new Text();
+        grid.add(actiontarget,1,6);
+        
         //set the scene with 300 by 275
         //default dimensions: minimun size needed
         Scene scene = new Scene(grid,300,275);
