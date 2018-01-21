@@ -21,7 +21,9 @@ public class Login extends Application {
     
     @Override
     public void start(Stage primaryStage) {
+        primaryStage.setTitle("JavaFX Welcome");
         
+        primaryStage.show();
     }
 
     /**
