@@ -61,7 +61,7 @@ public class Login extends Application {
         grid.add(pwBox,1,2);
         
         //see the lines for columns rows and gaps if true
-        grid.setGridLinesVisible(true);
+        //grid.setGridLinesVisible(true);
                 
         //set the scene with 300 by 275
         //default dimensions: minimun size needed
