@@ -1,13 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package login;
 
 import javafx.application.Application;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
+import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -25,10 +21,15 @@ public class Login extends Application {
     public void start(Stage primaryStage) {
         primaryStage.setTitle("JavaFX Welcome");
         
+        //GridPane object assigned grid variable
         GridPane grid = new GridPane();
+        //default position is top left
         grid.setAlignment(Pos.CENTER);
+        //space between the rows and colomns
         grid.setHgap(10);
         grid.setVgap(10);
+        //space between the edges of GridPane
+        //insets top,right,bottom,left(standard)
         grid.setPadding(new Insets(25,25,25,25));
         
         Scene scene = new Scene(grid,300,275);
