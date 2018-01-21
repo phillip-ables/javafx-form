@@ -11,6 +11,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
@@ -62,7 +63,17 @@ public class Login extends Application {
         
         //see the lines for columns rows and gaps if true
         //grid.setGridLinesVisible(true);
-                
+        
+        //Button named btn labeled Sign in
+        Button btn = new Button("Sign in");
+        //Hbox layout pane with 10px spacing
+        HBox hbBtn = new HBox(10);
+        //node at bottom vertically and at the right edge
+        hbBtn.setAlignment(Pos.BOTTOM_RIGHT);
+        hbBtn.getChildren().add(btn);
+        //column 1, row 4
+        grid.add(hbBtn,1,4);
+        
         //set the scene with 300 by 275
         //default dimensions: minimun size needed
         Scene scene = new Scene(grid,300,275);
